@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Gato IoT</title>
+
+<style>
+
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f5f5;
+        color: #111;
+    }
+
+    header {
+        background-color: #111;
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    header h1 {
+        margin: 10px 0;
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    header p {
+        color: #bbb;
+        font-size: 18px;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+        padding: 40px 0;
+    }
+
+    .section {
+        margin-bottom: 60px;
+    }
+
+    .section h2 {
+        border-left: 5px solid #111;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+
+    footer {
+        background: #111;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 20px;
+        background: #111;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #333;
+    }
+
+    .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+
+.slider {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+.slides {
+    display: none;
+}
+
+.slides img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Animación suave */
+.fade {
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
+
+.social-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.social-section h2 {
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    width: 60px;
+    height: 60px;
+    background: #111;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+    background: #333;
+}
+
+    
+</style>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo-container">
+    <img src="logo.png" alt="Logo El Gato IoT" class="logo">
+    <h1>EL GATO IoT</h1>
+</div>
+    <p>Conectando cosas</p>
+</header>
+
+<div class="container">
+   
+    <!-- Sobre la empresa -->
+    <div class="section">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            En El Gato IoT desarrollamos soluciones inteligentes de automatización para hogares e industria.
+            Nuestro ecosistema integra hardware y software en una sola plataforma, permitiendo control total,
+            eficiencia y seguridad sin necesidad de compras constantes.
+        </p>
+    </div>
+
+    <!-- Productos -->
+    <div class="section">
+        <h2>Productos</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Smart Home</h3>
+                <p>Sensores, cámaras y control remoto para automatizar tu hogar.</p>
+            </div>
+            <div class="card">
+                <h3>App Centralizada</h3>
+                <p>Control total desde tu teléfono en tiempo real.</p>
+            </div>
+            <div class="card">
+                <h3>Plataforma en la Nube</h3>
+                <p>Análisis de datos y monitoreo inteligente 24/7.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Servicios -->
+    <div class="section">
+        <h2>Servicios</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Suscripción</h3>
+                <p>Acceso a funciones premium, almacenamiento y automatización avanzada.</p>
+            </div>
+            <div class="card">
+                <h3>Análisis Inteligente</h3>
+                <p>Optimización de consumo y comportamiento del sistema.</p>
+            </div>
+            <div class="card">
+                <h3>Alertas</h3>
+                <p>Notificaciones en tiempo real para mayor seguridad.</p>
+            </div>
+        </div>
+    </div>
+
+<div class="slider">
+
+    <div class="slides fade">
+        <img src="img1.jpg" alt="Imagen 1">
+    </div>
+
+    <div class="slides fade">
+        <img src="img2.jpg" alt="Imagen 2">
+    </div>
+
+    <div class="slides fade">
+        <img src="img3.jpg" alt="Imagen 3">
+    </div>
+
+</div>
+
+    <!-- CTA -->
+    <div class="section" style="text-align:center;">
+        <h2>Empieza hoy</h2>
+        <p>Controla tu hogar o empresa con tecnología inteligente.</p>
+        <a href="#" class="btn">Contáctanos</a>
+    </div>
+
+</div>
+
+<div class="social-section">
+
+    <h2>Síguenos</h2>
+
+    <div class="social-icons">
+
+        <a href="https://www.facebook.com/profile.php?id=100069047897510"
+           target="_blank"
+           class="facebook">
+           <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/elgato.iot/"
+           target="_blank"
+           class="instagram">
+           <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@elgatoiot"
+           target="_blank"
+           class="tiktok">
+           <i class="fab fa-tiktok"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 El Gato IoT - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+
+    let slides = document.getElementsByClassName("slides");
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 3000); // cambia cada 3 segundos
+}
+</script>
